@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Générateur d’Idées Nulles™</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <h1>Générateur d’Idées Nulles™</h1>
+      <p>Appuie sur le bouton, récupère une idée éclatée, et fais semblant que c’était volontaire 😎</p>
+    </header>
+
+    <section class="card" aria-live="polite">
+      <div class="label">Idée générée</div>
+      <div id="idea" class="idea">Clique sur “Générer” pour invoquer le chaos.</div>
+
+      <div class="actions">
+        <button id="genBtn" class="btn primary">🎲 Générer</button>
+        <button id="copyBtn" class="btn">📋 Copier</button>
+        <button id="shareBtn" class="btn">📣 Partager</button>
+      </div>
+
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </section>
+
+    <section class="grid">
+      <div class="mini">
+        <h2>Mode</h2>
+        <label class="switch">
+          <input id="modeToggle" type="checkbox" />
+          <span>Ultra nul</span>
+        </label>
+      </div>
+
+      <div class="mini">
+        <h2>Historique</h2>
+        <p><span id="count">0</span> idée(s) générée(s) aujourd’hui. (Oui, ça compte comme productivité.)</p>
+        <button id="clearBtn" class="btn danger">🧼 Effacer l’historique</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>⚠️ Aucun cerveau n’a été blessé pendant la génération. Enfin… normalement.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
